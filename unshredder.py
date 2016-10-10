@@ -24,6 +24,13 @@ class UnshreddedImage:
 
         return pixels
 
+    def get_left_column(self):
+        return self.get_column_pixels(0)
+
+    def get_right_column(self):
+        width, _ = self.img.size
+        return self.get_column_pixels(width-1)
+
     def save(self, filename):
         self.img.save(filename, "PNG")
 

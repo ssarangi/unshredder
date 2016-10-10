@@ -1,6 +1,7 @@
 from PIL import Image
 import sys
 
+
 class UnshreddedImage:
     def __init__(self, img):
         self.img = img
